@@ -1,0 +1,41 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sevillana&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  margin-top: 0 !important;
+}
+
+// Responsive Breakpoints
+$xs: "all and (max-width:  767px)";
+$tablet: "all and (max-width:  991px)";
+$desktop: "all and (max-width: 1199px)";
+$between: "all and (max-width: 1350px)";
+$xl: "all and (min-width: 1600px)";
+$xxl: "all and (min-width: 1850px)";
+
+/* Colours Declared*/
+
+$black: #111111;
+$blue: #5fffff;
+
+/* Fonts Declared */
+
+// @font-face {
+//   font-family: "BRomny";
+//   src: url(../../fonts/BROmny-Black.ttf) format(ttf);
+// }
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
