@@ -1,4 +1,9 @@
 // Main
+
+:root {
+  --i: 0;
+}
+
 html {
   background-color: $black;
   color: $blue;
@@ -25,6 +30,79 @@ html {
 // // Wheel of fortune
 
 // Wheel
+
+.wheel {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 1px solid $blue;
+  box-shadow: 0 0 10px $blue;
+  border-radius: 50%;
+  transition: transform 5s ease-in-out;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 100%;
+    background: $blue;
+    transform: rotate(calc(14.4deg * var(--i))) !important;
+
+    filter: drop-shadow(0 0 5px $blue);
+  }
+
+  .spinBtn {
+    position: absolute;
+    inset: 250px;
+    width: 100px;
+    height: 100px;
+    background: white;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+
+    z-index: 999;
+    color: $black;
+
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px white);
+
+    user-select: none;
+  }
+
+  .spinBtn:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    height: 30px;
+    width: 20px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+  }
+
+  .numbers {
+    position: absolute;
+    inset: 0;
+
+    b {
+      position: absolute;
+      inset: 10px;
+      transform: rotate(calc(14.4deg * var(--i))) !important;
+      text-align: center;
+
+      rotate: 14.4deg;
+    }
+  }
+}
 
 // // Plinko
 

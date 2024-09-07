@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Main />
       <Wheel />
-      <Plinko />
+      {/* <Plinko /> */}
     </div>
   );
 }

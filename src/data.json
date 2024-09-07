@@ -1,12 +1,50 @@
-{
-  "2024 Table": [
-    {
-      "num": "1, 2, 3, 4",
-      "value": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
-    },
-    {
-      "num": "5, 6, 7, 8",
-      "value": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
-    }
-  ]
-}
+[
+  {
+    "num": 1,
+    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+  },
+  {
+    "num": 2,
+    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+  },
+  {
+    "num": 3,
+    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+  },
+  {
+    "num": 4,
+    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+  },
+  {
+    "num": 5,
+    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+  },
+  {
+    "num": 6,
+    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+  },
+  {
+    "num": 7,
+    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+  },
+  {
+    "num": 8,
+    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+  },
+  {
+    "num": 9,
+    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+  },
+  {
+    "num": 10,
+    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+  },
+  {
+    "num": 11,
+    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+  },
+  {
+    "num": 12,
+    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+  }
+]
