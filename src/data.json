@@ -1,50 +1,152 @@
 [
   {
-    "num": 1,
-    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+    "id": 1,
+    "num": "1 - 4",
+    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.",
+    "plinko": 0
   },
   {
-    "num": 2,
-    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+    "id": 2,
+    "num": "5 - 8",
+    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block.",
+    "plinko": 1
   },
   {
-    "num": 3,
-    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+    "id": 3,
+    "num": "9 - 12",
+    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns.",
+    "plinko": 0
   },
   {
-    "num": 4,
-    "condition": "Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+    "id": 4,
+    "num": "13 - 16",
+    "condition": "Creatures have Disadvantage on saving throws against the next spell you cast in the next minute that involves a saving throw.",
+    "plinko": 0
   },
   {
-    "num": 5,
-    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+    "id": 5,
+    "num": "17 - 20",
+    "condition": "You are subjected to an effect that lasts for 1 minute unless its description says otherwise. Roll 1d8 to determine the effect: on a 1, you’re surrounded by faint, ethereal music only you and creatures within 5 feet of you can hear; on a 2, your size increases by one size category; on a 3, you grow a long beard made of feathers that remains until you sneeze, at which point the feathers explode from your face and vanish; on a 4, you must shout when you speak; on a 5, illusory butterflies flutter in the air within 10 feet of you; on a 6, an eye appears on your forehead, granting you Advantage on Wisdom (Perception) checks; on an 7, pink bubbles float out of your mouth whenever you speak; on an 8, your skin turns a vibrant shade of blue for 24 hours or until the effect is ended by a Remove Curse spell.",
+    "plinko": 1
   },
   {
-    "num": 6,
-    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+    "id": 6,
+    "num": "21 - 24",
+    "condition": "For the next minute, all your spells with a casting time of an action have a casting time of a Bonus Action.",
+    "plinko": 0
   },
   {
-    "num": 7,
-    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+    "id": 7,
+    "num": "25 - 28",
+    "condition": "You are transported to the Astral Plane until the end of your next turn. You then return to the space you previously occupied or the nearest unoccupied space if that space is occupied.",
+    "plinko": 0
   },
   {
-    "num": 8,
-    "condition": "A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM’s control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature’s stat block."
+    "id": 8,
+    "num": "29 - 32",
+    "condition": "The next time you cast a spell that deals damage within the next minute, don’t roll the spell’s damage dice for the damage. Instead use the highest number possible for each damage die.",
+    "plinko": 0
   },
   {
-    "num": 9,
-    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+    "id": 9,
+    "num": "33 - 36",
+    "condition": "You have Resistance to all damage for the next minute.",
+    "plinko": 0
   },
   {
-    "num": 10,
-    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+    "id": 10,
+    "num": "37 - 40",
+    "condition": "You turn into a potted plant until the start of your next turn. While you’re a plant, you have the Incapacitated condition and have Vulnerability to all damage. If you drop to 0 Hit Points, your pot breaks, and your form reverts.",
+    "plinko": 0
   },
   {
-    "num": 11,
-    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+    "id": 11,
+    "num": "41 - 44",
+    "condition": "For the next minute, you can teleport up to 20 feet as a Bonus Action on each of your turns.",
+    "plinko": 0
   },
   {
-    "num": 12,
-    "condition": "For the next minute, you regain 5 Hit Points at the start of each of your turns."
+    "id": 12,
+    "num": "45 - 48",
+    "condition": "You and up to three creatures you choose within 30 feet of you have the Invisible condition for 1 minute. This invisibility ends on a creature immediately after it makes an attack roll, deals damage, or casts a spell.",
+    "plinko": 0
+  },
+  {
+    "id": 13,
+    "num": "49 - 52",
+    "condition": "A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and immunity to Magic Missile.",
+    "plinko": 0
+  },
+  {
+    "id": 14,
+    "num": "53 - 56",
+    "condition": "You can take one extra action on this turn.",
+    "plinko": 0
+  },
+  {
+    "id": 15,
+    "num": "57 - 60",
+    "condition": "You cast a random spell. If the spell normally requires Concentration, it doesn’t require Concentration in this case; the spell lasts for its full duration. Roll 1d10 to determine the spell: on a 1, Confusion; on a 2, Fireball; on a 3, Fog Cloud; on a 4, Fly (cast on a random creature within 60 feet of you), on a 5, Grease; on a 6, Levitate (cast on yourself); on a 7, Magic Missile (cast as a level 5 spell); on an 8, Mirror Image; on a 9, Polymorph (cast on yourself), and if you fail the saving throw, you turn into a Goat (see appendix B); on a 10, See Invisibility.",
+    "plinko": 1
+  },
+  {
+    "id": 16,
+    "num": "61 - 64",
+    "condition": "For the next minute, any flammable, nonmagical object you touch that isn’t being worn or carried by another creature bursts into flame, takes 1d4 Fire damage, and is burning.",
+    "plinko": 0
+  },
+  {
+    "id": 17,
+    "num": "65 - 68",
+    "condition": "If you die within the next hour, you immediately revive as if by the Reincarnate spell.",
+    "plinko": 0
+  },
+  {
+    "id": 18,
+    "num": "69 - 72",
+    "condition": "You have the Frightened condition until the end of your next turn. The DM determines the source of your fear.",
+    "plinko": 0
+  },
+  {
+    "id": 19,
+    "num": "73 – 76",
+    "condition": "You teleport up to 60 feet to an unoccupied space you can see.",
+    "plinko": 0
+  },
+  {
+    "id": 20,
+    "num": "77 - 80",
+    "condition": "A random creature within 60 feet of you has the Poisoned condition for 1d4 hours.",
+    "plinko": 0
+  },
+  {
+    "id": 21,
+    "num": "81 - 84",
+    "condition": "You radiate Bright Light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you has the Blinded condition until the end of its next turn.",
+    "plinko": 0
+  },
+  {
+    "id": 22,
+    "num": "85 - 88",
+    "condition": "Up to three creatures of your choice that you can see within 30 feet of you take 1d10 Necrotic damage. You regain Hit Points equal to the sum of the Necrotic damage dealt",
+    "plinko": 0
+  },
+  {
+    "id": 23,
+    "num": "89 - 92",
+    "condition": "Up to three creatures of your choice that you can see within 30 feet of you take 4d10 Lightning damage.",
+    "plinko": 0
+  },
+  {
+    "id": 24,
+    "num": "93 - 96",
+    "condition": "You and all creatures within 30 feet of you have Vulnerability to Piercing damage for the next minute.",
+    "plinko": 0
+  },
+  {
+    "id": 25,
+    "num": "97 - 100",
+    "condition": "Roll 1d6: On a 1, you regain 2d10 Hit Points; on a 2, one ally of your choice within 300 feet of you regains 2d10 Hit Points; on a 3, you regain your lowest-level expended spell slot; on a 4, one ally of your choice within 300 feet of you regains their lowest-level expended spell slot; on a 5, you regain all your expended Sorcery Points; on a 6, all the effects of row 17–20 affect you simultaneously.",
+    "plinko": 1
   }
 ]
