@@ -6,7 +6,7 @@ import ReactGA from "react-ga4";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// ReactGA.initialize("CODE IN HERE");
+ReactGA.initialize("G-6FBLT308V7");
 
 root.render(
   <React.StrictMode>
