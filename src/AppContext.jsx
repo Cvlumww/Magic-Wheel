@@ -10,7 +10,11 @@ export function AppProvider({ children }) {
     const deg = Math.floor(5000 + Math.random() * 5000);
     const wheelElement = document.getElementById("wheelElement");
 
-    wheelElement.style.transform = "rotate(" + deg + "deg);";
+    var transformCSS = "rotate(" + deg + "deg)";
+
+    // alert((wheelElement.style.transform = transformCSS));
+
+    wheelElement.style.transform = transformCSS;
 
     console.log("clicked");
     console.log(deg);

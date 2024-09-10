@@ -77,43 +77,6 @@ html {
     filter: drop-shadow(0 0 5px $blue);
   }
 
-  .spinBtn {
-    position: absolute;
-    inset: 250px;
-    width: 100px;
-    height: 100px;
-    background: white;
-
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.5em;
-
-    z-index: 999;
-    color: $black;
-
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    filter: drop-shadow(0 0 5px white);
-
-    user-select: none;
-  }
-
-  .spinBtn:before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    height: 30px;
-    width: 20px;
-    background-color: white;
-    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
-  }
-
   .numbers {
     position: absolute;
     inset: 0;
@@ -127,6 +90,48 @@ html {
       rotate: 14.4deg;
     }
   }
+}
+
+.spinBtn {
+  position: absolute;
+
+  top: 43%;
+  left: 22%;
+
+  width: 100px;
+  height: 100px;
+  background: white;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+
+  z-index: 999;
+  color: $black;
+
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transform: none !important;
+
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px white);
+
+  user-select: none;
+}
+
+.spinBtn:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  height: 30px;
+  width: 20px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
 }
 
 // // Plinko
