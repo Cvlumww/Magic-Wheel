@@ -1,31 +1,49 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import ReactGA from "react-ga4";
 
 const AppContext = createContext();
 
+// Paul example
+export const usePaulContext = () => {
+  const state = useContext(AppContext);
+
+  return state;
+};
+
+// MAIN
 export function AppProvider({ children }) {
-  const [counter, setCounter] = useState(0);
+  const [result, setResult] = useState();
 
   const spinAnimation = () => {
     const deg = Math.floor(5000 + Math.random() * 5000);
     const wheelElement = document.getElementById("wheelElement");
-
-    var transformCSS = "rotate(" + deg + "deg)";
-
-    // alert((wheelElement.style.transform = transformCSS));
+    const transformCSS = "rotate(" + deg + "deg)";
 
     wheelElement.style.transform = transformCSS;
 
-    console.log("clicked");
-    console.log(deg);
+    console.log("total spins: " + deg / 360);
+    const r = deg % 360;
+
+    setTimeout(() => {
+      setResult(25 - Math.floor(r / 14.4));
+    }, 5000);
+
+    setTimeout(() => {
+      message(result);
+    }, 6000);
+  };
+
+  const message = (result) => {
+    alert(result);
   };
 
   return (
     <AppContext.Provider
       value={{
-        counter,
-        setCounter,
+        result,
+        setResult,
         spinAnimation,
+        message,
       }}
     >
       {children}

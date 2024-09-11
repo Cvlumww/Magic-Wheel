@@ -24,14 +24,13 @@ p {
 }
 
 html {
-  background-color: #111111;
-  color: #5fffff;
+  background-color: #e7f7b6;
   padding: 0;
 }
 
 .mainBody {
-  background-color: #111111;
-  color: #5fffff;
+  background-color: #e7f7b6;
+  color: #fc60a8;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,14 +38,15 @@ html {
 .mainBody h1 {
   font-size: 50px;
   text-align: center;
+  color: #fc60a8;
 }
 
 .wheel {
-  position: absolute;
+  position: relative;
   width: 600px;
   height: 600px;
-  border: 1px solid #5fffff;
-  box-shadow: 0 0 10px #5fffff;
+  border: 3px solid #494368;
+  box-shadow: 0 0 10px #494368;
   border-radius: 50%;
   transition: transform 5s ease-in-out;
   overflow: hidden;
@@ -56,20 +56,43 @@ html {
   justify-content: center;
 }
 .wheel span {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 13%;
+  margin: 0 auto;
+  height: 300px;
+  transform: rotate(calc(14.4deg * var(--i))) !important;
+  transform-origin: bottom;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  overflow: hidden;
 }
-.wheel span:nth-child(even) {
-  color: #5fffff;
-  filter: drop-shadow(0 0 5px #5fffff);
+.wheel span p {
+  text-align: center;
+  font-weight: 900;
 }
-.wheel span:nth-child(odd) {
-  color: #5fffff;
-  filter: drop-shadow(0 0 5px #5fffff);
+.wheel span:nth-child(4n) {
+  color: white;
+  background: #f4b393;
+}
+.wheel span:nth-child(4n+1) {
+  color: white;
+  background: #494368;
+}
+.wheel span:nth-child(4n+2) {
+  color: white;
+  background: #fc60a8;
+}
+.wheel span:nth-child(4n+3) {
+  color: white;
+  background: #90bede;
+}
+.wheel span:nth-child(4n+4) {
+  color: #494368;
+  background: #e7f7b6;
 }
 .wheel .numbers {
   position: absolute;
@@ -95,7 +118,6 @@ html {
   font-family: "Quicksand", sans-serif;
   font-size: 1.5em;
   z-index: 999;
-  color: #111111;
   border-radius: 50%;
   display: flex;
   flex-direction: column;

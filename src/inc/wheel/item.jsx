@@ -3,7 +3,7 @@ import React from "react";
 const Item = ({ num, con, count, key }) => {
   return (
     <span key={key} style={{ "--i": count }}>
-      {num}
+      <p>{num}</p>
     </span>
   );
 };
