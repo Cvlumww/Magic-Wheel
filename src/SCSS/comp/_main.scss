@@ -9,9 +9,14 @@ html {
   padding: 0;
 }
 
+// Error handling
+// iframe {
+//   display: none;
+// }
+
 .mainBody {
   background-color: $base;
-  color: $pink;
+  color: $color3;
 
   display: flex;
   flex-direction: row;
@@ -20,7 +25,7 @@ html {
   h1 {
     font-size: 50px;
     text-align: center;
-    color: $pink;
+    color: $color3;
   }
 }
 
@@ -29,13 +34,18 @@ html {
 // // Wheel of fortune
 
 // Wheel
+.wheelBody {
+  h1 {
+    color: $light;
+  }
+}
 
 .wheel {
   position: relative;
   width: 600px;
   height: 600px;
-  border: 3px solid $violet;
-  box-shadow: 0 0 10px $violet;
+  border: 3px solid $color3;
+  box-shadow: 0 0 10px $color3;
   border-radius: 50%;
   transition: transform 5s ease-in-out;
   overflow: hidden;
@@ -47,7 +57,6 @@ html {
 
   span {
     position: absolute;
-    // left: 50%;
     top: 0;
     width: 13%;
     margin: 0 auto;
@@ -56,7 +65,6 @@ html {
 
     transform-origin: bottom;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    // background: $blue;
 
     display: flex;
     flex-direction: row;
@@ -71,30 +79,25 @@ html {
 
   span:nth-child(4n) {
     color: white;
-    background: $peach;
+    background: $base;
   }
 
   span:nth-child(4n + 1) {
-    color: white;
-    background: $violet;
+    color: $base;
+    background: $light;
   }
 
   span:nth-child(4n + 2) {
     color: white;
-    background: $pink;
+    background: $color1;
   }
 
   span:nth-child(4n + 3) {
-    color: white;
-    background: $blue;
+    color: $base;
+    background: $color2;
   }
 
-  span:nth-child(4n + 4) {
-    color: $violet;
-    background: $base;
-  }
-
-  // span:nth-last-child(1) {
+  // span:nth-child(4n + 4) {
   //   color: $violet;
   //   background: $base;
   // }
@@ -117,7 +120,7 @@ html {
 .spinBtn {
   position: absolute;
 
-  top: 450px;
+  top: 400px;
   left: 260px;
 
   width: 100px;
@@ -156,7 +159,63 @@ html {
   clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
 }
 
+// Message Pop up
+
+#PopUpMessage {
+  position: absolute;
+  background-color: $light;
+  color: $base;
+  font-weight: 900;
+
+  padding: 30px;
+
+  height: auto;
+  width: 50%;
+
+  top: 50%;
+  left: 15%;
+
+  z-index: 999;
+
+  transition-duration: 0.8s;
+
+  border-radius: 8px;
+
+  // Fix this
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-end;
+
+  svg {
+    font-size: 50px;
+  }
+
+  .closeMessage {
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border: 3px solid $base;
+
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+
+    margin-top: 30px;
+  }
+}
+
 // // Plinko
+
+.plinkoMain {
+  color: $light;
+}
+
+.gameMain {
+  width: 100%;
+}
 
 // Particles
 

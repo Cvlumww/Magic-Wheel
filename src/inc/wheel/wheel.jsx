@@ -1,17 +1,15 @@
 import { usePaulContext } from "../../AppContext";
 
 import data from "../../data.json";
-import Test from "./test";
 import Item from "./item";
 import Message from "./Message";
 
 const Wheel = () => {
-  const { spinAnimation, message, result, setResult } = usePaulContext();
+  const { spinAnimation, message, result, setResult, showPop } =
+    usePaulContext();
 
   return (
     <div className="wheelBody">
-      <h3>Wheel Goes Here</h3>
-
       <div className="spinBtn" onClick={spinAnimation}>
         Spin
       </div>
@@ -23,13 +21,20 @@ const Wheel = () => {
               num={dat.num}
               con={dat.condition}
               count={i + 1}
-              key={dat.id}
+              keys={dat.id}
             />
           );
         })}
       </div>
 
-      <Message />
+      <h1>{showPop}</h1>
+
+      {showPop === true &&
+        data.map((dat, i) => {
+          if (result === dat.id) {
+            return <Message value={dat.condition} />;
+          }
+        })}
     </div>
   );
 };

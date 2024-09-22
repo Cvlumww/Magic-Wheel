@@ -1,8 +1,8 @@
 import React from "react";
 
-const Item = ({ num, con, count, key }) => {
+const Item = ({ num, con, count, keys }) => {
   return (
-    <span key={key} style={{ "--i": count }}>
+    <span key={keys} style={{ "--i": count }}>
       <p>{num}</p>
     </span>
   );

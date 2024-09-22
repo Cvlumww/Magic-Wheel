@@ -24,13 +24,13 @@ p {
 }
 
 html {
-  background-color: #e7f7b6;
+  background-color: #0c0212;
   padding: 0;
 }
 
 .mainBody {
-  background-color: #e7f7b6;
-  color: #fc60a8;
+  background-color: #0c0212;
+  color: #7de2d1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -38,15 +38,19 @@ html {
 .mainBody h1 {
   font-size: 50px;
   text-align: center;
-  color: #fc60a8;
+  color: #7de2d1;
+}
+
+.wheelBody h1 {
+  color: #bf6cef;
 }
 
 .wheel {
   position: relative;
   width: 600px;
   height: 600px;
-  border: 3px solid #494368;
-  box-shadow: 0 0 10px #494368;
+  border: 3px solid #7de2d1;
+  box-shadow: 0 0 10px #7de2d1;
   border-radius: 50%;
   transition: transform 5s ease-in-out;
   overflow: hidden;
@@ -76,23 +80,19 @@ html {
 }
 .wheel span:nth-child(4n) {
   color: white;
-  background: #f4b393;
+  background: #0c0212;
 }
 .wheel span:nth-child(4n+1) {
-  color: white;
-  background: #494368;
+  color: #0c0212;
+  background: #bf6cef;
 }
 .wheel span:nth-child(4n+2) {
   color: white;
-  background: #fc60a8;
+  background: #8816ca;
 }
 .wheel span:nth-child(4n+3) {
-  color: white;
-  background: #90bede;
-}
-.wheel span:nth-child(4n+4) {
-  color: #494368;
-  background: #e7f7b6;
+  color: #0c0212;
+  background: #7de2d1;
 }
 .wheel .numbers {
   position: absolute;
@@ -108,7 +108,7 @@ html {
 
 .spinBtn {
   position: absolute;
-  top: 450px;
+  top: 400px;
   left: 260px;
   width: 100px;
   height: 100px;
@@ -140,4 +140,44 @@ html {
   background-color: white;
   -webkit-clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
           clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+#PopUpMessage {
+  position: absolute;
+  background-color: #bf6cef;
+  color: #0c0212;
+  font-weight: 900;
+  padding: 30px;
+  height: auto;
+  width: 50%;
+  top: 50%;
+  left: 15%;
+  z-index: 999;
+  transition-duration: 0.8s;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#PopUpMessage svg {
+  font-size: 50px;
+}
+#PopUpMessage .closeMessage {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #0c0212;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.plinkoMain {
+  color: #bf6cef;
+}
+
+.gameMain {
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import ReactGA from "react-ga4";
 
 const AppContext = createContext();
@@ -12,7 +12,24 @@ export const usePaulContext = () => {
 
 // MAIN
 export function AppProvider({ children }) {
+  useEffect(() => {
+    console.log("Page Reload");
+    console.log("showPop: ", showPop);
+    console.log("showPlinko: ", showPlinko);
+  }, []);
+
   const [result, setResult] = useState();
+  const [showPop, setShowPop] = useState(false);
+
+  const [showPlinko, setShowPlinko] = useState(false);
+
+  const closePopUp = () => {
+    setShowPop(!showPop);
+  };
+
+  const closePopUpAndOpenPlinko = () => {
+    setShowPlinko(!showPlinko);
+  };
 
   const spinAnimation = () => {
     const deg = Math.floor(5000 + Math.random() * 5000);
@@ -24,17 +41,21 @@ export function AppProvider({ children }) {
     console.log("total spins: " + deg / 360);
     const r = deg % 360;
 
-    setTimeout(() => {
-      setResult(25 - Math.floor(r / 14.4));
-    }, 5000);
+    // For testing plino system use this value 27.016666666666666
 
     setTimeout(() => {
-      message(result);
+      setResult(25 - Math.floor(r / 14.4));
+    }, 2000);
+
+    setTimeout(() => {
+      message(showPop);
+
+      setShowPop(!showPop);
     }, 6000);
   };
 
   const message = (result) => {
-    alert(result);
+    console.log("result is:" + result);
   };
 
   return (
@@ -44,6 +65,12 @@ export function AppProvider({ children }) {
         setResult,
         spinAnimation,
         message,
+        showPop,
+        setShowPop,
+        closePopUp,
+        showPlinko,
+        setShowPlinko,
+        closePopUpAndOpenPlinko,
       }}
     >
       {children}
